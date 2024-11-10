@@ -1,0 +1,456 @@
+.resume {
+    background-color: #1a1a1a;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.resume h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: orangered;
+}
+
+.resume p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.btn-3 {
+    padding: 15px 30px;
+    background-color: orangered;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-3:hover {
+    background-color: rgba(75, 33, 33, 0.616);
+    color: orangered;
+    border: 2px solid orangered;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.6);
+}
+
+
+
+
+.find-me {
+    background-color: #1a1a1a;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.find-me h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: orangered;
+}
+
+.find-me ul {
+    list-style: none;
+    padding: 0;
+}
+
+.find-me ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 18px;
+}
+
+.find-me ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.find-me ul li a:hover {
+    color: orangered;
+}
+
+.find-me ul li a i {
+    font-size: 24px;
+    color: orangered;
+}
+
+
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.6), 0 0 15px rgba(255, 0, 0, 0.5);
+    animation: redShadowPulse 1.5s infinite;
+}
+
+@keyframes redShadowPulse {
+    0% {
+        box-shadow: 0 8px 16px rgba(255, 0, 0, 0.4), 0 0 10px rgba(255, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 12px 24px rgba(255, 0, 0, 0.6), 0 0 20px rgba(255, 0, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 8px 16px rgba(255, 0, 0, 0.4), 0 0 10px rgba(255, 0, 0, 0.3);
+    }
+}
+
+
+
+/* Add this to style.css */
+
+.about-img {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.7); /* Red shadow */
+    animation: redShadowPulse 1.5s infinite; /* Pulse animation */
+}
+
+@keyframes redShadowPulse {
+    0% {
+        box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.8);
+    }
+    100% {
+        box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.5);
+    }
+}
+/* Updated hover effect for service boxes */
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.4); /* Red shadow effect */
+    animation: redShadowPulse 1.5s infinite;
+}
+
+@keyframes redShadowPulse {
+    0% {
+        box-shadow: 0px 8px 16px rgba(255, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0px 12px 24px rgba(255, 0, 0, 0.6);
+    }
+    100% {
+        box-shadow: 0px 8px 16px rgba(255, 0, 0, 0.3);
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: orangered;
+    text-shadow: 0 0 25px orangered, 0 0 50px orangered;
+    transform: scale(1.1);
+}
+
+span {
+    color: orangered;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+.contact {
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact:hover {
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h3 {
+    font-size: 30px;
+}
+
+.home-content h1 {
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 25px 0 30px;
+    max-width: 700px;
+}
+
+.btn-box {
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+
+.btn-1 {
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-1:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn-2 {
+    padding: 15px 28px;
+    background-color: orangered;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-2:hover {
+    background-color: white;
+    color: orangered;
+}
+
+.img-box {
+    position: absolute;
+    top: 180px;
+    right: 200px;
+    width: 300px;
+}
+
+.img-box img {
+    border-radius: 100%;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: orangered;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: black;
+}
+
+.about-img img {
+    position: relative;
+    width: 300px;
+    box-shadow: 0 0 25px orangered, 0 0 50px orangered;
+    border-radius: 50%;
+}
+
+.about-content h2 {
+    text-align: left;
+    font-size: 30px;
+    color: white;
+}
+
+.about-content h3 {
+    font-size: 40px;
+    color: white;
+}
+
+.about-content p {
+    color: white;
+    font-size: 16px;
+    margin: 2em 0 3em;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+
+.contact-form form {
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contact-form form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 1em;
+    font-size: 16px;
+    color: black;
+    background: rgba(241, 241, 241);
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .social a {
+    font-size: 20px;
+    color: white;
+    border: 2px solid orangered;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: 0 0 10px orangered, 0 0 10px orangered;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+    transform: scale(1.1) translateY(-10px);
+    color: orangered;
+    border: 2px solid orangered;
+}
+
+.footer ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid orangered;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+    list-style: none;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}

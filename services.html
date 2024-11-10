@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Vikas Gupta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        /* Adding spacing and improving layout for the services page */
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+        }
+        
+        .contact {
+            background-color: #c31818;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .services {
+            background-color: #f4f4f4;
+            padding: 60px 20px;
+        }
+        
+        .services-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .services-content h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #333;
+        }
+        
+        .service-box {
+            background-color: #fff;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .service-box h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .service-box p {
+            font-size: 18px;
+            color: #666;
+        }
+        
+        .btn-2 {
+            background-color: #d0170d;
+            color: white;
+            padding: 12px 24px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .btn-2:hover {
+            background-color: #c2120c;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .social a {
+            color: white;
+            font-size: 24px;
+            margin: 0 15px;
+        }
+        
+        .social a:hover {
+            color: #c91717;
+        }
+        
+        .copyright {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><span>Vikas</span> Gupta</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="contact.html" class="contact">Contact Me</a>
+    </header>
+
+    <section class="services">
+        <div class="services-content">
+            <h2>Services I Offer</h2>
+            <div class="service-box">
+                <h3>Penetration Testing</h3>
+                <p>Identifying vulnerabilities in your network and systems to prevent potential exploits before they happen.</p>
+            </div>
+            <div class="service-box">
+                <h3>Security Audits</h3>
+                <p>Comprehensive audits of your digital assets, identifying weaknesses and providing tailored solutions for improvement.</p>
+            </div>
+            <div class="service-box">
+                <h3>Incident Response</h3>
+                <p>Immediate response and mitigation to security breaches, ensuring minimal damage and swift recovery.</p>
+            </div>
+            <div class="service-box">
+                <h3>Training & Consulting</h3>
+                <p>Providing cybersecurity training for your teams, along with consulting to build robust security strategies.</p>
+            </div>
+        </div>
+        <a href="contact.html" class="btn-2">Request a Consultation</a>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p class="copyright">© 2024 Vikas Gupta</p>
+    </footer>
+</body>
+
+</html>
